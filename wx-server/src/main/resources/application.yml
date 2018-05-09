@@ -1,0 +1,32 @@
+server:
+  port: 8017
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+spring:
+  application:
+    name: analyze
+  aop:
+    auto: true
+    proxy-target-class: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  http:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+  datasource:                           # 指定数据源
+      url: 
+      username: 
+      password: 
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      tomcat:
+        init-s-q-l: set names utf8mb4
+
+  jpa:
+      generate-ddl: false
+      show-sql: true
+      hibernate:
+        ddl-auto: none
+      database: mysql

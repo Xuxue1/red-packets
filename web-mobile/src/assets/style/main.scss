@@ -1,0 +1,618 @@
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+    min-height: 100%;
+}
+
+#app {
+    min-height: 100%
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+}
+
+textarea {
+    font-family: Microsoft YaHei, Arial;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.icon-money {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    height: 28px;
+    background: url('/static/img/icon_form.png') center 0px no-repeat;
+}
+
+.icon-count {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    height: 28px;
+    background: url('/static/img/icon_form.png') center -69px no-repeat;
+}
+
+.icon-nicheng {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    height: 28px;
+    background: url('/static/img/icon_form.png') center -140px no-repeat;
+}
+
+// <!-- index --->
+.topContainer1 {
+    position: relative;
+    height: 1060px;
+    background: url("/static/img/BG.png") center center no-repeat;
+    .topContent {
+        width: 100%;
+        position: absolute;
+        top: 50%
+    }
+}
+
+.topFormWrapper {
+    width: 1000px;
+    padding-left: 150px;
+    margin: 0 auto;
+    .el-form-item__label {
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .el-input__inner {
+        height: 50px;
+        line-height: 50px;
+        border-color: transparent;
+    }
+    .el-form-item__label {
+        color: #333;
+        font-size: 15px;
+    }
+    .el-form-item__error {
+        top: 16px;
+        left: 470px;
+    }
+}
+
+.sendRedPacket {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    background-color: #d84d43;
+    background: url("http://wxapi.fishiny.com/static/img/BG-btn.png") 0 0 no-repeat;
+    background-size: 220px 50px;
+}
+
+.bottomContainer {
+    height: auto;
+    width: 100%;
+    background: #fff;
+    .el-collapse-item__arrow.el-icon-arrow-right {
+        display: none;
+    }
+    .el-collapse-item__header {
+        border: 0;
+    }
+    .el-collapse {
+        border: 0
+    }
+    .el-collapse-item__wrap {
+        border: 0;
+    }
+    .el-collapse-item__content {
+        padding-bottom: 15px;
+    }
+}
+
+.bottomContent {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 980px;
+    margin: 0 auto;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 80px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+
+.indexDialog {
+    .el-dialog__headerbtn {
+        display: none;
+    }
+    .el-dialog {
+        width: 600px;
+        padding: 0 40px;
+        border-radius: 10px;
+    }
+    .el-dialog__body {
+        padding: 15px 0;
+    }
+    .cancelSend {
+        width: 120px;
+        height: 32px;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        background-size: 120px 32px;
+        background-color: #d0323d;
+        background: url("http://wxapi.fishiny.com/static/img/BG-btn.png") 0 0 no-repeat;
+    }
+}
+
+.DAPPDialog {
+    .el-dialog__headerbtn {
+        display: none;
+    }
+    .el-dialog {
+        width: 80%;
+        padding: 0 40px;
+        border-radius: 10px;
+    }
+    .el-dialog__body {
+        padding: 15px 0;
+    }
+    .el-loading-spinner {
+        position: fixed;
+    }
+    .el-icon-loading {
+        font-size: 50px;
+        color: #d84d43;
+    }
+    .el-loading-text {
+        color: #d84d43;
+    }
+}
+
+.DTipZJC {
+    .el-dialog__headerbtn {
+        display: none;
+    }
+}
+
+.topContainer2 {
+    padding: 120px 0;
+    background: #f8f8f8;
+    .successP {
+        font-size: 26px;
+        text-align: center;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    .codeWrapper {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        margin: 0 auto;
+    }
+    .sendOnceMore {
+        width: 220px;
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        background-color: #d84d43;
+        background: url("http://wxapi.fishiny.com/static/img/BG-btn.png") 0 0 no-repeat;
+        background-size: 220px 50px;
+    }
+}
+
+// 留言页面
+.leaveMsg {
+    background: #f8f8f8;
+}
+
+//红包记录
+.recorder {
+    .el-table {
+        .el-table__header-wrapper {
+            th {
+                background: #f2f2f2;
+            }
+        }
+    }
+}
+
+// DAPP样式
+.DWrpper {
+    height: 100%;
+    background: #ffead5;
+    background: -webkit-linear-gradient(#ffead5, #fee9d4);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#ffead5, #fee9d4);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#ffead5, #fee9d4);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#ffead5, #fee9d4);
+    /* 标准的语法 */
+    .el-radio__input.is-checked .el-radio__inner {
+        border-color: #d84d43;
+        background: #d84d43;
+    }
+    .el-radio__inner {
+        border-color: #d84d43;
+    }
+    .el-dialog {
+        border-radius: 10px;
+    }
+    .theme-color {
+        color: #d84d43;
+    }
+    .DPacketTop {
+        width: 100%;
+        height: 34%;
+        padding: 25px 15px 0 15px;
+        overflow: hidden;
+    }
+    .DTopOne {
+        height: 10px;
+        width: 100%;
+        border-radius: 10px;
+        background: rgba(244, 142, 145, 0.15);
+    }
+    .DTopTwo {
+        position: relative;
+        top: -5px;
+        height: 90%;
+        width: 92%;
+        margin: 0 4%;
+        background: #fef3e9;
+        border-radius: 0px 0px 10px 10px;
+        .DTopDash {
+            padding-top: 20px;
+            border-bottom: 1px dashed #f48d91;
+            margin: 0 20px
+        }
+        .DTopCircleLeft {
+            width: 8px;
+            height: 15px;
+            position: absolute;
+            top: 13px;
+            left: 0;
+            border-radius: 0px 50px 50px 0px;
+            background: #ffead6
+        }
+        .DTopCircleRight {
+            width: 8px;
+            height: 15px;
+            position: absolute;
+            top: 13px;
+            right: 0;
+            border-radius: 50px 0px 0px 50px;
+            background: #ffead6;
+        }
+    }
+    .DTopContent {
+        color: #d84e43;
+        padding: 25px 20px;
+    }
+    .DBottom {
+        width: 100%;
+        height: 66%;
+        padding: 10px 10px 20px 10px;
+        .DBottomLeft {
+            //剩余红包
+            padding: 10px 0 0 20px;
+            line-height: 30px;
+            color: #d61318;
+            font-size: 15px;
+        }
+        .DBottomContentClose {
+            height: 350px;
+            margin: 0 10px 10px;
+            background: #d74d43;
+            border-radius: 10px;
+            border: 1px solid #d74d43;
+            overflow: hidden;
+        }
+        .DClose {
+            position: relative;
+            height: 250px;
+            width: 100%;
+            border: 1px solid #d74d43;
+            background-color: #d74d43;
+            border-radius: 10px 10px 50% 50% / 10px 10px 15% 15%;
+            box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.1);
+        }
+        .DCloseContent {
+            padding-top: 8%;
+            .circleAvatar {
+                width: 60px;
+                height: 60px;
+                border-radius: 60px;
+                background: #f4d193;
+                margin: 0 auto;
+                overflow:hidden;
+            }
+            .moumou {
+                color: #f4d193;
+            }
+        }
+        .DOpen {
+            height: 150px;
+            width: 100%;
+            border: none;
+            padding: 0 10px;
+            background-color: #d74d43;
+            border-radius: 10px 10px 50% 50% / 10px 10px 15% 15%;
+            box-shadow: 0px 4px 0px -1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            .DOpenIn {
+                height: 150px;
+                background-color: #fff;
+            }
+        }
+        .DBottomContentOpen {
+            width: 100%;
+            margin-top: -100px;
+        }
+    }
+    .DChai {
+        position: relative;
+        bottom: 40px;
+        left: 50%;
+        margin-left: -40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        padding: 5px;
+        background: #dcbc83;
+        z-index: 100;
+        .DChaiContent {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            font-size: 35px;
+            border-radius: 40px;
+            background: #dcbc83;
+            border: 1px solid #ceab6a;
+            color: #383a3b;
+            font-weight: bold;
+        }
+    }
+    .DPacket {
+        width: 100%;
+        padding: 0 10px;
+        position: relative;
+        bottom: -120px;
+    }
+    .DOpenContent {
+        background: #fff;
+        padding-bottom: 10px;
+        z-index: 10;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .DListHeader {
+        font-size: 14px;
+        line-height: 45px;
+        font-weight: bold;
+        color: #999999;
+        overflow: hidden;
+        padding-left: 45px;
+    }
+    .DTip {
+        .el-dialog__headerbtn {
+            display: none;
+        }
+        .el-dialog {
+            width: 90%;
+            padding: 0 30px;
+            border-radius: 10px;
+        }
+        .el-dialog__body {
+            padding: 15px 0;
+        }
+    }
+    .cancelSend {
+        width: 60%;
+        height: 40px;
+        color: #fff;
+        border-radius: 50px;
+        border: none;
+        background-size: 100% 100%;
+        background-color: #d84d43;
+        background: url("http://wxapi.fishiny.com/static/img/BG-btn.png") 0 0 no-repeat;
+    }
+    .notYet {
+        float: left;
+        width: 45%;
+        height: 40px;
+        color: #999999;
+        background: #ddd;
+        border-radius: 50px;
+        border: none;
+    }
+    .already {
+        float: right;
+        width: 45%;
+        height: 40px;
+        color: #fff;
+        border-radius: 50px;
+        border: none;
+        background-size: 100% 100%;
+        background-color: #d84d43;
+        background: url("http://wxapi.fishiny.com/static/img/BG-btn.png") 0 0 no-repeat;
+    }
+    .DMoney {
+        display: inline-block;
+        min-width: 18px;
+        padding: 5px 4px;
+        color: #fff;
+        background: #df383f;
+        border-radius: 5px;
+        margin-right: 3px;
+        text-align: center
+    }
+    .DPacketItem {
+        line-height: 40px;
+        padding: 10px 0;
+        position: relative;
+        border-top: 1px solid #f2f2f2;
+        .DNicheng {
+            line-height: 20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: 20px;
+            color: #333;
+            overflow: hidden;
+        }
+        .DNidate {
+            font-size: 12px;
+            line-height: 14px;
+            padding-top: 6px;
+            color: #a0a0a0;
+        }
+    }
+    .DAvatar {
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        left: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 100px;
+        border: 1px solid #ccc;
+    }
+    .DGetMoney {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #333;
+        height: 60px;
+        line-height: 60px;
+    }
+    .DPacketLast {
+        line-height: 50px;
+        color: #333;
+        font-size: 14px
+    }
+    .DPacketNi {
+        padding-left: 45px;
+        padding-right: 80px;
+        font-size: 14px;
+    }
+    // 输入我的NAS地址
+    .Dtitle {
+        width: 100%;
+        font-size: 21px;
+        font-weight: bold;
+        color: #d84e43;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .DAddressInput {
+        .el-input__inner {
+            border: 1px solid transparent;
+            border-bottom: 1px solid #ed9d8d;
+            background: transparent;
+            color: #d84d43;
+        }
+        .el-input__inner:focus {
+            border: 1px solid transparent;
+            border-bottom: 1px solid #ed9d8d;
+            background: transparent;
+            color: #d84d43;
+        }
+        .el-input__inner::-webkit-input-placeholder {
+            /*WebKit browsers*/
+            color: #d84e43;
+        }
+        .el-input__inner::-moz-input-placeholder {
+            /*Mozilla Firefox*/
+            color: #d84e43;
+        }
+        .el-input__inner::-ms-input-placeholder {
+            /*Internet Explorer*/
+            color: #d84e43;
+        }
+    }
+    .DAddressConfirmWrap {
+        padding-top: 8%;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    .DAddressConfirmBtn {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        border-radius: 100px;
+        border: none;
+        background-size: 150px 40px;
+        background-color: #d84d43;
+        background: url("http://wxapi.fishiny.com/static/img/BG-btn.png") 0 0 no-repeat;
+    }
+    button:focus {
+        outline: none;
+    }
+    .DNASAddress {
+        width: 100%;
+        line-height: 20px;
+        padding: 15px 0;
+        border-bottom: 1px dashed #ed9d8d;
+        color: #d84d43;
+    }
+    .Dcopy {
+        font-size: 12px;
+        width: 60px;
+        height: 20px;
+        border: 1px solid #666;
+        border-radius: 20px;
+        color: #666;
+        background: transparent;
+    }
+    .DZJC {
+        margin-top: 10px;
+        padding: 15px;
+        background: #fce0c4;
+        line-height: 25px;
+        white-space: normal;
+        overflow: hidden;
+        // background: rgba(244, 142, 145, 0.15);
+    }
+    .mobaoli {
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        background: #ffead5;
+        position: fixed;
+        -webkit-filter: blur(10px);
+        /* Chrome, Opera */
+        -moz-filter: blur(100px);
+        -ms-filter: blur(100px);
+        filter: blur(100px);
+    }
+}
